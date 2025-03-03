@@ -10,9 +10,15 @@ const listingSchema = new Schema({
         type: String
     },
     image:{
-        type: String,
+        filename:{
+            type: String,
+            default:"listingImage"
+        },
+        url:{
+            type: String,
         default: "https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA",
         set: (v)=>v===""?"https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA":v
+        }
     },
     price: Number,
     location: String,
