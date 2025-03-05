@@ -16,8 +16,8 @@ const listingSchema = new Schema({
         },
         url:{
             type: String,
-        default: "https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA",
-        set: (v)=>v===""?"https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA":v
+            default: "https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA",
+            set: (v)=>v===""?"https://unsplash.com/photos/photography-of-empty-road-and-mountain-during-daytime-rcG2VqAKJdA":v
         }
     },
     price: Number,
